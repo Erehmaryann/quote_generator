@@ -40,3 +40,9 @@ async function getQuotes() {
 }
 //callin the func on load
 getQuotes();
+
+// Tweet Quote
+function tweetQuote() {
+  const tweetUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+  window.open(tweetUrl, "_blank");
+}
