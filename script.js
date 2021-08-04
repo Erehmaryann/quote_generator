@@ -19,6 +19,12 @@ function newQuote() {
     // Set the author text
     authorText.textContent = randomQuote.author;
   }
+  //check quote length to determine styling
+  if (randomQuote.text.length > 50) {
+    quoteText.classList.add("long-quote");
+  } else {
+    quoteText.classList.remove("long-quote");
+  }
 }
 
 // Get Quotes fron API
