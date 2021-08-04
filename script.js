@@ -46,3 +46,7 @@ function tweetQuote() {
   const tweetUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
   window.open(tweetUrl, "_blank");
 }
+
+// Event Listeners
+newQuoteBtn.addEventListener("click", newQuote);
+// twitterBtn.addEventListener("click", tweetQuote);
