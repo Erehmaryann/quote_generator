@@ -1,7 +1,7 @@
 const quoteContainer = document.getElementById("quote-generator");
 const quoteText = document.getElementById("quote");
-const author = document.getElementById("author");
-// const quoteContainer = document.getElementById("quote-generator");
+const authorText = document.getElementById("author");
+const twitterBtn = document.getElementById("twitter");
 // const quoteContainer = document.getElementById("quote-generator");
 // Global variable "apiQuotes"
 let apiQuotes = [];
