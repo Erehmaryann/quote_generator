@@ -2,7 +2,7 @@ const quoteContainer = document.getElementById("quote-generator");
 const quoteText = document.getElementById("quote");
 const authorText = document.getElementById("author");
 const twitterBtn = document.getElementById("twitter");
-// const quoteContainer = document.getElementById("quote-generator");
+const newQuoteBtn = document.getElementById("new-quote");
 // Global variable "apiQuotes"
 let apiQuotes = [];
 
