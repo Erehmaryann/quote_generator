@@ -10,7 +10,8 @@ let apiQuotes = [];
 function newQuote() {
   //Pick a random quote from apiQuotes array
   const randomQuote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
-  console.log(randomQuote);
+  // Set the quote text
+  quoteText.textContent = randomQuote.text;
 }
 
 // Get Quotes fron API
