@@ -12,8 +12,13 @@ function newQuote() {
   const randomQuote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
   // Set the quote text
   quoteText.textContent = randomQuote.text;
-  // Set the author text
-  authorText.textContent = randomQuote.author;
+  //check if author field is blank and replace with "Unknown"
+  if (!randomQuote.author) {
+    authorText.textContent = "Unknown";
+  } else {
+    // Set the author text
+    authorText.textContent = randomQuote.author;
+  }
 }
 
 // Get Quotes fron API
@@ -25,7 +30,6 @@ async function getQuotes() {
     newQuote();
   } catch (e) {
     //Catch error here
-    // console.log(e, "Error getting quotes");
   }
 }
 //callin the func on load
