@@ -12,6 +12,8 @@ function newQuote() {
   const randomQuote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
   // Set the quote text
   quoteText.textContent = randomQuote.text;
+  // Set the author text
+  authorText.textContent = randomQuote.author;
 }
 
 // Get Quotes fron API
