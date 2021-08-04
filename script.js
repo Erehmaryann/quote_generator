@@ -1,3 +1,4 @@
+const quoteContainer = document.getElementById("quote-generator");
 // Global variable "apiQuotes"
 let apiQuotes = [];
 
