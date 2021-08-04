@@ -1,6 +1,6 @@
 const quoteContainer = document.getElementById("quote-generator");
 const quoteText = document.getElementById("quote");
-// const quoteContainer = document.getElementById("quote-generator");
+const author = document.getElementById("author");
 // const quoteContainer = document.getElementById("quote-generator");
 // const quoteContainer = document.getElementById("quote-generator");
 // Global variable "apiQuotes"
