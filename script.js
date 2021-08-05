@@ -3,6 +3,8 @@ const quoteText = document.getElementById("quote");
 const authorText = document.getElementById("author");
 const twitterBtn = document.getElementById("twitter");
 const newQuoteBtn = document.getElementById("new-quote");
+const loader = document.getElementById("loader");
+
 // Global variable "apiQuotes"
 let apiQuotes = [];
 
@@ -38,7 +40,7 @@ async function getQuotes() {
     //Catch error here
   }
 }
-//callin the func on load
+//calling the func on load
 getQuotes();
 
 // Tweet Quote
